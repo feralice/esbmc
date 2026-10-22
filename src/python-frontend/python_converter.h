@@ -2186,6 +2186,7 @@ private:
   exprt probe_expr(const nlohmann::json &node);
   std::optional<typet>
   literal_numpy_array_type(const nlohmann::json &call) const;
+  nlohmann::json bind_numpy_constructor_argument(const nlohmann::json &arg);
 
   bool contains_tracked_numpy_view_object(const nlohmann::json &node);
 
